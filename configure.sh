@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # # Install brew
-# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo "Updating package lists..."
 brew update
@@ -37,8 +37,8 @@ echo ''
 echo "Now installing oh-my-zsh plugins..."
 echo ''
 git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
-git clone git://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 # # powerlevel9k install
 # echo ''
@@ -66,11 +66,11 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-sy
 # git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 
 # Vim color scheme install
-echo ''
-echo "Now installing vim wombat color scheme..."
-echo ''
-git clone https://github.com/sheerun/vim-wombat-scheme.git ~/.vim/colors/wombat 
-mv ~/.vim/colors/wombat/colors/* ~/.vim/colors/
+# echo ''
+# echo "Now installing vim wombat color scheme..."
+# echo ''
+# git clone https://github.com/sheerun/vim-wombat-scheme.git ~/.vim/colors/wombat 
+# mv ~/.vim/colors/wombat/colors/* ~/.vim/colors/
 
 # # Midnight commander install
 # echo ''
